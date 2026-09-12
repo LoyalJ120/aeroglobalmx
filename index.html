@@ -92,7 +92,180 @@
 .project-card:has(video)::after{
   display:none !important;
 }
-</style></head>
+</style>
+<style id="aeroglobal-responsive">
+/* ===== AEROGLOBALMX RESPONSIVE / MOBILE ===== */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+img, video { max-width: 100%; }
+
+@media (max-width: 900px) {
+  .nav-inner {
+    height: 88px !important;
+    padding: 0 18px !important;
+  }
+  .brand img {
+    width: 125px !important;
+    height: 78px !important;
+  }
+  nav {
+    gap: 14px !important;
+    font-size: 12px !important;
+  }
+  .hero {
+    min-height: auto !important;
+    padding: 92px 20px 58px !important;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 10vw, 68px) !important;
+    line-height: .94 !important;
+    max-width: 100% !important;
+  }
+  .hero p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+  }
+  .hero-stats,
+  .features,
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .feature {
+    padding: 18px 12px !important;
+  }
+  .feature-image {
+    max-width: 95px !important;
+    max-height: 60px !important;
+  }
+  .container {
+    width: min(100% - 36px, 1180px) !important;
+  }
+  .section {
+    padding: 70px 0 !important;
+  }
+  .section-title {
+    font-size: clamp(30px, 7vw, 46px) !important;
+  }
+  .services,
+  .service-grid,
+  .projects,
+  .project-grid,
+  .tech-grid,
+  .technology-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .matrice-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .matrice-grid img {
+    width: 100% !important;
+  }
+  .video-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .nav-inner {
+    height: 76px !important;
+    padding: 0 14px !important;
+  }
+  .brand img {
+    width: 108px !important;
+    height: 68px !important;
+  }
+  nav {
+    display: none !important;
+  }
+
+  .hero {
+    padding: 88px 18px 45px !important;
+  }
+  .hero h1 {
+    font-size: clamp(36px, 12vw, 54px) !important;
+    letter-spacing: -.03em !important;
+  }
+  .hero p {
+    font-size: 15px !important;
+  }
+
+  .hero-stats,
+  .features,
+  .feature-grid,
+  .services,
+  .service-grid,
+  .projects,
+  .project-grid,
+  .tech-grid,
+  .technology-grid,
+  .video-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .features {
+    gap: 1px !important;
+  }
+  .feature {
+    min-height: 105px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    text-align: left !important;
+  }
+  .feature-image {
+    width: 76px !important;
+    height: 55px !important;
+    object-fit: contain !important;
+    flex: 0 0 76px !important;
+  }
+
+  .section {
+    padding: 58px 0 !important;
+  }
+  .container {
+    width: calc(100% - 28px) !important;
+  }
+  .section-title {
+    font-size: 31px !important;
+    line-height: 1.05 !important;
+  }
+
+  .card,
+  .service-card,
+  .project-card,
+  .tech-card {
+    padding: 20px !important;
+  }
+
+  .project-card video {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 220px !important;
+    object-fit: cover !important;
+  }
+
+  .matrice-grid,
+  .matrice-images {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-grid,
+  .contact-content {
+    grid-template-columns: 1fr !important;
+  }
+
+  footer {
+    text-align: center !important;
+  }
+}
+
+/* Keep long labels and buttons inside the screen */
+h1, h2, h3, p, a, li, span, div {
+  overflow-wrap: anywhere;
+}
+</style>
+
+</head>
 <body>
 <nav class="nav"><div class="nav-inner">
 <a class="brand" href="#inicio"><img alt="AeroglobalMX" src="assets/image_5.png"/></a>
