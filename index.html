@@ -77,47 +77,88 @@
   
     @media (max-width:700px){.nav-inner{height:82px}.brand img{width:94px;height:66px}.nav-links{gap:14px;font-size:11px}.nav-cta{padding:8px 12px}}
 </style>
-<style id="aeroglobal-mobile-final">
-html,body{overflow-x:hidden}
-.mobile-menu-btn,.mobile-menu{display:none}
-@media(max-width:900px){
- .nav-inner{height:86px!important;width:calc(100% - 32px)!important}
- .brand img{width:142px!important;height:78px!important;object-fit:contain!important}
- .hero{min-height:auto!important;display:block!important;padding:145px 0 60px!important}
- .hero-content{width:calc(100% - 36px)!important;padding-top:0!important;margin:auto}
- .hero h1{font-size:clamp(42px,9vw,66px)!important;line-height:.94!important}
- .hero p{font-size:17px!important;line-height:1.55!important}
- .feature-bar{grid-template-columns:repeat(2,1fr)!important;gap:30px 14px!important}
- .service-grid,.project-grid{grid-template-columns:repeat(2,1fr)!important}
- .matrice-feature{grid-template-columns:1fr!important}
+<style>
+.project-card video{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  background:#080a0d;
+  cursor:pointer;
 }
-@media(max-width:620px){
- .nav-inner{height:74px!important;width:calc(100% - 28px)!important;position:relative}
- .brand img{width:118px!important;height:62px!important}
- .nav-links{display:none!important}
- .mobile-menu-btn{display:flex!important;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid rgba(255,255,255,.22);border-radius:12px;background:rgba(255,255,255,.05);color:#fff;font-size:23px;line-height:1;cursor:pointer;margin-left:auto;z-index:1002}
- .mobile-menu{position:fixed!important;top:84px!important;left:14px!important;right:14px!important;z-index:1001!important;display:none;flex-direction:column;gap:2px;padding:10px;background:rgba(10,11,13,.98);border:1px solid rgba(255,255,255,.12);border-radius:16px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
- .mobile-menu.open{display:flex!important}
- .mobile-menu a{display:block!important;padding:15px 12px;border-radius:10px;color:#e8eaed!important;font-weight:800!important}
- .hero{padding:112px 0 46px!important}
- .hero-content{width:calc(100% - 32px)!important}
- .eyebrow{font-size:10px!important;letter-spacing:.18em!important;line-height:1.8!important}
- .hero h1{font-size:clamp(40px,11.8vw,54px)!important;margin:16px 0 20px!important}
- .hero p{font-size:15.5px!important}
- .actions{gap:10px!important;margin-top:26px!important}
- .btn{width:100%!important;min-height:56px!important}
- .feature-bar{grid-template-columns:1fr 1fr!important;gap:30px 12px!important;margin-top:42px!important}
- .feature-image{width:72px!important;height:54px!important}
- .feature-stat strong{font-size:19px!important}
- .feature-stat span{font-size:10px!important;letter-spacing:.08em!important;white-space:normal!important}
- section{padding:68px 0!important}
- .section-head{display:block!important;margin-bottom:30px!important}
- .section-head h2{font-size:34px!important}
- .service-grid,.project-grid{grid-template-columns:1fr!important}
- .project-card video{width:100%!important;height:auto!important;aspect-ratio:16/9!important;object-fit:cover!important}
- .matrice-feature{padding:20px!important;gap:22px!important}
- .matrice-gallery{grid-template-columns:1fr!important;grid-template-rows:auto!important;min-height:0!important}
- .matrice-gallery img:first-child{grid-row:auto!important}
+.project-card:has(video){
+  overflow:hidden;
+}
+.project-card:has(video)::after{
+  display:none !important;
+}
+</style>
+
+<style id="aeroglobal-responsive">
+/* AEROGLOBALMX — responsive final */
+html{overflow-x:hidden}
+body{overflow-x:hidden}
+.mobile-menu-btn,.mobile-menu{display:none}
+
+@media (max-width: 900px){
+  .nav-inner{height:86px !important;width:calc(100% - 32px) !important}
+  .brand img{width:142px !important;height:78px !important;object-fit:contain !important}
+  .nav-links{gap:16px !important;font-size:12px !important}
+  .hero{min-height:auto !important;display:block !important;padding:145px 0 58px !important}
+  .hero-content{width:calc(100% - 36px) !important;padding-top:0 !important;margin:auto}
+  .hero h1{font-size:clamp(42px,9vw,66px) !important;line-height:.94 !important}
+  .hero p{font-size:17px !important;line-height:1.55 !important}
+  .feature-bar{grid-template-columns:repeat(2,1fr) !important;gap:28px 12px !important;margin-top:48px !important}
+  .feature-stat span{white-space:normal !important}
+  .service-grid,.project-grid{grid-template-columns:repeat(2,1fr) !important}
+  .matrice-feature{grid-template-columns:1fr !important}
+  .matrice-gallery{min-height:300px !important}
+}
+
+@media (max-width: 620px){
+  .nav-inner{height:74px !important;width:calc(100% - 28px) !important}
+  .brand img{width:118px !important;height:62px !important}
+  .nav-links{display:none !important}
+  .mobile-menu-btn{
+    display:flex !important;align-items:center;justify-content:center;
+    width:44px;height:44px;border:1px solid rgba(255,255,255,.22);
+    border-radius:12px;background:rgba(255,255,255,.05);color:#fff;
+    font-size:23px;line-height:1;cursor:pointer
+  }
+  .mobile-menu{
+    position:fixed;top:74px;left:14px;right:14px;z-index:101;
+    display:none;flex-direction:column;gap:2px;padding:10px;
+    background:rgba(10,11,13,.97);border:1px solid rgba(255,255,255,.12);
+    border-radius:16px;box-shadow:0 18px 50px rgba(0,0,0,.45)
+  }
+  .mobile-menu.open{display:flex !important}
+  .mobile-menu a{padding:14px 12px;border-radius:10px;color:#e8eaed;font-weight:800}
+  .mobile-menu a:hover{background:rgba(255,255,255,.07)}
+  .hero{padding:112px 0 44px !important}
+  .hero-content{width:calc(100% - 32px) !important}
+  .eyebrow{font-size:10px !important;letter-spacing:.18em !important;line-height:1.8 !important}
+  .hero h1{font-size:clamp(40px,11.8vw,54px) !important;margin:16px 0 20px !important}
+  .hero p{font-size:15.5px !important;line-height:1.6 !important}
+  .actions{gap:10px !important;margin-top:26px !important}
+  .btn{width:100% !important;min-height:56px !important}
+  .feature-bar{grid-template-columns:1fr 1fr !important;gap:30px 12px !important;margin-top:42px !important}
+  .feature-stat{padding:0 !important}
+  .feature-image{width:72px !important;height:54px !important;margin-bottom:8px !important}
+  .feature-stat strong{font-size:19px !important}
+  .feature-stat span{font-size:10px !important;letter-spacing:.08em !important}
+  section{padding:68px 0 !important}
+  .section-head{display:block !important;margin-bottom:30px !important}
+  .section-head h2{font-size:34px !important}
+  .section-head p{margin-top:14px !important;font-size:15px !important}
+  .service-grid,.project-grid{grid-template-columns:1fr !important}
+  .service{padding:24px !important}
+  .project-card video{width:100% !important;height:auto !important;min-height:0 !important;aspect-ratio:16/9 !important;object-fit:cover !important}
+  .matrice-feature{padding:20px !important;gap:22px !important}
+  .matrice-copy h3{font-size:28px !important}
+  .matrice-gallery{display:grid !important;grid-template-columns:1fr !important;grid-template-rows:auto !important;min-height:0 !important}
+  .matrice-gallery img:first-child{grid-row:auto !important}
+  .contact{padding-bottom:80px !important}
+  footer .footer-inner{display:block !important;text-align:center !important}
 }
 </style></head>
 <body>
@@ -197,11 +238,11 @@ html,body{overflow-x:hidden}
 <p class="project-note">Las imágenes de esta sección corresponden a material proporcionado para AeroglobalMX.</p>
 <div style="margin-top:60px"><div class="kicker" style="color:#727a83;margin-bottom:18px">Video · Proyectos</div>
 <div class="project-grid">
-<article class="project-card"><video controls="" muted="" playsinline="" poster="assets/video_1_poster.jpg" preload="metadata"><source src="assets/video_1.mp4" type="video/mp4"/></video><div class="overlay"><h3>Visualización de resultados</h3><p>Material audiovisual de proyecto.</p></div></article>
+<article class="project-card"><video controls="True" muted="True" playsinline="True" poster="assets/video_1_poster.jpg" preload="metadata"><source src="assets/video_1.mp4" type="video/mp4"/></video></article>
 <div class="project-stack">
-<article class="project-card small"><video controls="" muted="" playsinline="" poster="assets/video_2_poster.jpg" preload="metadata"><source src="assets/video_2.mp4" type="video/mp4"/></video></article>
-<article class="project-card small"><video controls="" muted="" playsinline="" poster="assets/video_3_poster.jpg" preload="metadata"><source src="assets/video_3.mp4" type="video/mp4"/></video></article>
-<article class="project-card small"><video controls="" muted="" playsinline="" preload="metadata"><source src="assets/video_4.mp4" type="video/mp4"/></video><div class="overlay"><h3>Contenido audiovisual</h3><p>Material real de AeroglobalMX.</p></div></article>
+<article class="project-card small"><video controls="True" muted="True" playsinline="True" poster="assets/video_2_poster.jpg" preload="metadata"><source src="assets/video_2.mp4" type="video/mp4"/></video></article>
+<article class="project-card small"><video controls="True" muted="True" playsinline="True" poster="assets/video_3_poster.jpg" preload="metadata"><source src="assets/video_3.mp4" type="video/mp4"/></video></article>
+<article class="project-card small"><video controls="True" muted="True" playsinline="True" poster="assets/video_4_poster.jpg" preload="metadata"><source src="assets/video_4.mp4" type="video/mp4"/></video></article>
 </div>
 </div>
 </div>
@@ -221,26 +262,50 @@ html,body{overflow-x:hidden}
 <section class="contact" id="contacto"><div class="container"><h2>¿Tienes un proyecto?</h2><p>Cuéntanos qué necesitas levantar, inspeccionar o mostrar y te ayudamos a definir la solución adecuada.</p><div class="contact-actions"><a class="btn btn-primary" href="mailto:cotizaciones@aeroglobalmx.com?subject=Cotización%20AeroglobalMX">Solicitar cotización</a><a class="btn btn-secondary" href="https://www.instagram.com/aeroglobalmx/" rel="noopener" target="_blank">Instagram · @aeroglobalmx</a></div></div></section>
 <footer><div class="container footer-inner"><div class="footer-brand">AEROGLOBALMX<small>Topografía · Fotogrametría · LiDAR · Inspección · Marketing Aéreo</small></div><div class="social">cotizaciones@aeroglobalmx.com · <a href="https://www.instagram.com/aeroglobalmx/" rel="noopener" target="_blank">Instagram @aeroglobalmx</a></div></div></footer>
 <script>
-document.addEventListener("DOMContentLoaded",function(){
-  const btn=document.querySelector(".mobile-menu-btn");
-  const menu=document.getElementById("mobileMenu");
-  if(!btn||!menu)return;
-  btn.addEventListener("click",function(e){
-    e.preventDefault();
-    menu.classList.toggle("open");
-    btn.setAttribute("aria-expanded",menu.classList.contains("open")?"true":"false");
-    btn.textContent=menu.classList.contains("open")?"×":"☰";
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('video source[data-video-src]').forEach(function(source){
+    try {
+      const data = source.getAttribute('data-video-src');
+      const comma = data.indexOf(',');
+      const b64 = data.slice(comma + 1);
+      const bin = atob(b64);
+      const bytes = new Uint8Array(bin.length);
+      for(let i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i);
+      const blob = new Blob([bytes], {type:'video/mp4'});
+      const url = URL.createObjectURL(blob);
+      source.src = url;
+      source.removeAttribute('data-video-src');
+      source.parentElement.load();
+    } catch(e) { console.error('No se pudo cargar el video', e); }
   });
-  menu.querySelectorAll("a").forEach(function(link){
-    link.addEventListener("click",function(e){
-      e.preventDefault();
-      const target=link.getAttribute("href");
-      menu.classList.remove("open");
-      btn.setAttribute("aria-expanded","false");
-      btn.textContent="☰";
-      setTimeout(function(){ window.location.hash=target.substring(1); },20);
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("video").forEach(v => {
+    v.addEventListener("click", (e) => {
+      if (e.target === v) {
+        if (v.paused) v.play().catch(()=>{});
+        else v.pause();
+      }
     });
   });
+});
+</script><script>
+document.addEventListener("DOMContentLoaded",function(){
+  const btn=document.querySelector(".mobile-menu-btn");
+  const menu=document.querySelector("#mobileMenu");
+  if(!btn||!menu)return;
+  btn.addEventListener("click",function(){
+    const open=menu.classList.toggle("open");
+    btn.setAttribute("aria-expanded",open?"true":"false");
+    btn.textContent=open?"×":"☰";
+  });
+  menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",function(){
+    menu.classList.remove("open");
+    btn.setAttribute("aria-expanded","false");
+    btn.textContent="☰";
+  }));
 });
 </script></body>
 </html>
