@@ -29,7 +29,7 @@
     .nav-cta{border:1px solid rgba(255,255,255,.25);padding:10px 16px;border-radius:999px}
 
     .hero{min-height:100vh;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 75% 25%,rgba(106,169,255,.12),transparent 30%),linear-gradient(135deg,#050607,#12161b 55%,#08090b)}
-    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.72)),url('css_image_13.jpg') center/cover;opacity:.34;filter:saturate(.75)}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.72)),url('assets/css_image_13.jpg') center/cover;opacity:.34;filter:saturate(.75)}
     .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,8,10,.96) 0%,rgba(7,8,10,.74) 42%,rgba(7,8,10,.2) 100%)}
     .hero-content{position:relative;z-index:1;width:min(var(--max),92%);padding-top:90px}
     .eyebrow{text-transform:uppercase;letter-spacing:.22em;color:var(--silver);font-size:12px;font-weight:800}
@@ -164,7 +164,7 @@ body{overflow-x:hidden}
 </style></head>
 <body>
 <nav class="nav"><div class="nav-inner">
-<a class="brand" href="#inicio"><img alt="AeroglobalMX" src="aeroglobal_logo.png"/></a>
+<a class="brand" href="#inicio"><img alt="AeroglobalMX" src="assets/aeroglobal_logo.png"/></a>
 <div class="nav-links"><a href="#servicios">Servicios</a><a href="#tecnologia">Tecnología</a><a href="#proyectos">Proyectos</a><a href="#entregables">Entregables</a><a href="#marketing">Marketing</a><a class="nav-cta" href="#contacto">Cotizar</a></div>
 <button aria-expanded="false" aria-label="Abrir menú" class="mobile-menu-btn" type="button">☰</button></div><div class="mobile-menu" id="mobileMenu"><a href="#servicios">Servicios</a><a href="#tecnologia">Tecnología</a><a href="#proyectos">Proyectos</a><a href="#entregables">Entregables</a><a href="#marketing">Marketing</a><a href="#contacto">Cotizar</a></div></nav>
 <header class="hero" id="inicio"><div class="hero-content">
@@ -174,19 +174,19 @@ body{overflow-x:hidden}
 <div class="actions"><a class="btn btn-primary" href="#contacto">Solicitar cotización</a><a class="btn btn-secondary" href="#proyectos">Ver proyectos</a></div>
 <div class="hero-stats feature-bar">
 <div class="stat feature-stat">
-<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="icon_lidar.png"/></div>
+<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="assets/icon_lidar.png"/></div>
 <strong>LiDAR</strong><span>Topografía avanzada</span>
 </div>
 <div class="stat feature-stat">
-<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="icon_rtk.png"/></div>
+<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="assets/icon_rtk.png"/></div>
 <strong>RTK</strong><span>Posicionamiento</span>
 </div>
 <div class="stat feature-stat">
-<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="icon_thermo.png"/></div>
+<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="assets/icon_thermo.png"/></div>
 <strong>Termografía</strong><span>Análisis térmico</span>
 </div>
 <div class="stat feature-stat">
-<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="icon_marketing.png"/></div>
+<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="assets/icon_marketing.png"/></div>
 <strong>Marketing</strong><span>Producción audiovisual</span>
 </div>
 </div>
@@ -194,22 +194,18 @@ body{overflow-x:hidden}
 <section class="projects" id="proyectos"><div class="container">
 <div class="section-head"><div><div class="kicker">Trabajo real</div><h2>Resultados de nuestros levantamientos.</h2></div><p>Una muestra del tipo de información que podemos generar a partir de nuestros vuelos y procesamiento.</p></div>
 <div class="project-grid">
-<article class="project-card"><img alt="Terreno con vegetación" src="proyecto_vegetacion.png"/><div class="overlay"><h3>Terreno con vegetación</h3><p>Captura aérea de un terreno con amplia cobertura vegetal.</p></div></article>
+<article class="project-card"><img alt="Terreno con vegetación" src="assets/proyecto_vegetacion.png"/><div class="overlay"><h3>Terreno con vegetación</h3><p>Captura aérea de un terreno con amplia cobertura vegetal.</p></div></article>
 <div class="project-stack">
-<article class="project-card small"><img alt="Mismo terreno sin vegetación" src="proyecto_sin_vegetacion.png"/><div class="overlay"><h3>Mismo terreno sin vegetación</h3><p>Modelo del terreno generado con LiDAR para visualizar la superficie debajo de la vegetación.</p></div></article>
-<article class="project-card small"><img alt="Modelo de elevación y curvas de nivel" src="proyecto_1.jpeg"/><div class="overlay"><h3>Modelo de elevación + curvas de nivel</h3><p>Visualización del relieve y variación de elevación del terreno.</p></div></article>
+<article class="project-card small"><img alt="Mismo terreno sin vegetación" src="assets/proyecto_sin_vegetacion.png"/><div class="overlay"><h3>Mismo terreno sin vegetación</h3><p>Modelo del terreno generado con LiDAR para visualizar la superficie debajo de la vegetación.</p></div></article>
+<article class="project-card small"><img alt="Modelo de elevación y curvas de nivel" src="assets/proyecto_1.jpeg"/><div class="overlay"><h3>Modelo de elevación + curvas de nivel</h3><p>Visualización del relieve y variación de elevación del terreno.</p></div></article>
 </div>
-</div>
-<div class="project-grid project-grid-extra">
-<article class="project-card"><img alt="Terreno con vegetación - captura aérea" src="proyecto_vegetacion.png"/><div class="overlay"><h3>Terreno con vegetación</h3><p>Captura aérea de alta resolución con cobertura vegetal.</p></div></article>
-<article class="project-card"><img alt="Mismo terreno sin vegetación mediante LiDAR" src="proyecto_sin_vegetacion.png"/><div class="overlay"><h3>Mismo terreno sin vegetación</h3><p>Modelo digital del terreno generado con LiDAR para analizar la superficie debajo de la vegetación.</p></div></article>
 </div>
 <p class="project-note">Las imágenes de esta sección corresponden a material proporcionado para AeroglobalMX.</p>
 <div style="margin-top:60px"><div class="kicker" style="color:#727a83;margin-bottom:18px">Video · Proyectos</div>
 <div class="project-grid">
-<article class="project-card"><video controls="True" muted="True" playsinline="True" poster="video_1_poster.jpg" preload="metadata"><source src="video_1.mp4" type="video/mp4"/></video></article>
+<article class="project-card"><video controls="True" muted="True" playsinline="True" poster="assets/video_1_poster.jpg" preload="metadata"><source src="assets/video_1.mp4" type="video/mp4"/></video></article>
 <div class="project-stack">
-<article class="project-card small"><video controls="True" muted="True" playsinline="True" poster="video_3_poster.jpg" preload="metadata"><source src="video_3.mp4" type="video/mp4"/></video></article>
+<article class="project-card small"><video controls="True" muted="True" playsinline="True" poster="assets/video_3_poster.jpg" preload="metadata"><source src="assets/video_3.mp4" type="video/mp4"/></video></article>
 </div>
 </div>
 </div>
