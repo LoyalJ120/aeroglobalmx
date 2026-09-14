@@ -29,7 +29,7 @@
     .nav-cta{border:1px solid rgba(255,255,255,.25);padding:10px 16px;border-radius:999px}
 
     .hero{min-height:100vh;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 75% 25%,rgba(106,169,255,.12),transparent 30%),linear-gradient(135deg,#050607,#12161b 55%,#08090b)}
-    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.72)),url('assets/css_image_13.jpg') center/cover;opacity:.34;filter:saturate(.75)}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.72)),url('css_image_13.jpg') center/cover;opacity:.34;filter:saturate(.75)}
     .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,8,10,.96) 0%,rgba(7,8,10,.74) 42%,rgba(7,8,10,.2) 100%)}
     .hero-content{position:relative;z-index:1;width:min(var(--max),92%);padding-top:90px}
     .eyebrow{text-transform:uppercase;letter-spacing:.22em;color:var(--silver);font-size:12px;font-weight:800}
@@ -60,7 +60,7 @@
     .projects{background:#f3f4f5;color:#0e1115}.project-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.project-card{position:relative;border-radius:18px;overflow:hidden;min-height:340px;background:#111}.project-card img,.project-card video{width:100%;height:100%;object-fit:cover}.project-card .overlay{position:absolute;inset:auto 0 0;padding:24px;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff}.project-card h3{font-size:24px}.project-card p{font-size:13px;color:#d0d5da}.project-card.small{min-height:230px}.project-stack{display:grid;gap:18px}
     .project-note{margin-top:28px;color:#6a727b;font-size:14px}
 
-    .deliverables{background:#0b0d10}.deliver-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.deliver{border:1px solid var(--line);border-radius:14px;padding:22px;background:rgba(255,255,255,.025)}.deliver b{font-size:18px}.deliver p{color:#9fa7b0;font-size:13px;margin-top:6px}.deliver .formats{display:block;margin-top:8px;color:#c7cdd4;font-size:11px;line-height:1.55;letter-spacing:.02em}
+    .deliverables{background:#0b0d10}.deliver-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.deliver{border:1px solid var(--line);border-radius:14px;padding:22px;background:rgba(255,255,255,.025)}.deliver b{font-size:18px}.deliver p{color:#9fa7b0;font-size:13px;margin-top:6px}
 
     .marketing{background:linear-gradient(135deg,#111419,#08090b);position:relative;overflow:hidden}.marketing:before{content:"";position:absolute;width:520px;height:520px;right:-200px;top:-180px;border-radius:50%;border:1px solid rgba(255,255,255,.1);box-shadow:0 0 0 40px rgba(255,255,255,.015),0 0 0 80px rgba(255,255,255,.01)}.marketing-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:center}.marketing h2{font-size:clamp(38px,5vw,62px);line-height:1.02;margin:12px 0 18px;letter-spacing:-.04em}.marketing p{color:#b2b9c1;font-size:18px;max-width:650px}.marketing-list{display:grid;gap:10px;margin-top:26px}.marketing-list div{padding:12px 0;border-bottom:1px solid var(--line);color:#e0e3e7}.marketing-card{border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:22px;padding:28px}.marketing-card .big{font-size:70px;line-height:1;font-weight:900;background:linear-gradient(#fff,#888);-webkit-background-clip:text;background-clip:text;color:transparent}.marketing-card p{font-size:14px;margin-top:10px}
 
@@ -76,6 +76,7 @@
     @media(max-width:600px){section{padding:80px 0}.nav-inner{height:68px}.brand img{width:48px;height:48px}.brand span{display:none}.hero{min-height:90vh}.hero p{font-size:16px}.hero-content{padding-top:80px}.hero-stats{gap:20px}.feature-bar{grid-template-columns:1fr 1fr}.feature-stat strong{font-size:22px}.feature-stat span{white-space:normal}.deliver-grid,.steps{grid-template-columns:1fr}.equip{padding:26px}.footer-inner{flex-direction:column;align-items:flex-start}}
   
     @media (max-width:700px){.nav-inner{height:82px}.brand img{width:94px;height:66px}.nav-links{gap:14px;font-size:11px}.nav-cta{padding:8px 12px}}
+.project-grid-extra{margin-top:18px}.project-grid-extra .project-card{min-height:300px}.formats{display:block;color:var(--silver2);font-size:13px;line-height:1.5;margin-top:8px}
 </style>
 <style>
 .project-card video{
@@ -163,7 +164,7 @@ body{overflow-x:hidden}
 </style></head>
 <body>
 <nav class="nav"><div class="nav-inner">
-<a class="brand" href="#inicio"><img alt="AeroglobalMX" src="assets/aeroglobal_logo.png"/></a>
+<a class="brand" href="#inicio"><img alt="AeroglobalMX" src="aeroglobal_logo.png"/></a>
 <div class="nav-links"><a href="#servicios">Servicios</a><a href="#tecnologia">Tecnología</a><a href="#proyectos">Proyectos</a><a href="#entregables">Entregables</a><a href="#marketing">Marketing</a><a class="nav-cta" href="#contacto">Cotizar</a></div>
 <button aria-expanded="false" aria-label="Abrir menú" class="mobile-menu-btn" type="button">☰</button></div><div class="mobile-menu" id="mobileMenu"><a href="#servicios">Servicios</a><a href="#tecnologia">Tecnología</a><a href="#proyectos">Proyectos</a><a href="#entregables">Entregables</a><a href="#marketing">Marketing</a><a href="#contacto">Cotizar</a></div></nav>
 <header class="hero" id="inicio"><div class="hero-content">
@@ -173,19 +174,19 @@ body{overflow-x:hidden}
 <div class="actions"><a class="btn btn-primary" href="#contacto">Solicitar cotización</a><a class="btn btn-secondary" href="#proyectos">Ver proyectos</a></div>
 <div class="hero-stats feature-bar">
 <div class="stat feature-stat">
-<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="assets/icon_lidar.png"/></div>
+<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="icon_lidar.png"/></div>
 <strong>LiDAR</strong><span>Topografía avanzada</span>
 </div>
 <div class="stat feature-stat">
-<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="assets/icon_rtk.png"/></div>
+<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="icon_rtk.png"/></div>
 <strong>RTK</strong><span>Posicionamiento</span>
 </div>
 <div class="stat feature-stat">
-<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="assets/icon_thermo.png"/></div>
+<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="icon_thermo.png"/></div>
 <strong>Termografía</strong><span>Análisis térmico</span>
 </div>
 <div class="stat feature-stat">
-<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="assets/icon_marketing.png"/></div>
+<div aria-hidden="true" class="feature-icon feature-image"><img alt="" src="icon_marketing.png"/></div>
 <strong>Marketing</strong><span>Producción audiovisual</span>
 </div>
 </div>
@@ -193,14 +194,25 @@ body{overflow-x:hidden}
 <section class="projects" id="proyectos"><div class="container">
 <div class="section-head"><div><div class="kicker">Trabajo real</div><h2>Resultados de nuestros levantamientos.</h2></div><p>Una muestra del tipo de información que podemos generar a partir de nuestros vuelos y procesamiento.</p></div>
 <div class="project-grid">
-<article class="project-card"><img alt="Terreno con vegetación capturado por dron" src="assets/proyecto_real_1.jpg"/><div class="overlay"><h3>Terreno con vegetación</h3><p>Captura aérea de alta resolución de un terreno con cobertura vegetal.</p></div></article>
+<article class="project-card"><img alt="Terreno con vegetación" src="proyecto_vegetacion.png"/><div class="overlay"><h3>Terreno con vegetación</h3><p>Captura aérea de un terreno con amplia cobertura vegetal.</p></div></article>
 <div class="project-stack">
-<article class="project-card small"><img alt="Mismo terreno sin vegetación" src="assets/proyecto_real_2.jpg"/><div class="overlay"><h3>Mismo terreno sin vegetación</h3><p>Modelo digital del terreno generado con LiDAR para analizar el relieve debajo de la vegetación.</p></div></article>
-<article class="project-card small"><img alt="Modelo de elevación y curvas de nivel" src="assets/proyecto_1.jpeg"/><div class="overlay"><h3>Modelo de elevación + curvas de nivel</h3><p>Visualización del relieve y variación de elevación del terreno.</p></div></article>
-</div></div>
-<div class="project-grid" style="margin-top:24px"><article class="project-card"><img alt="Curvas de nivel de proyecto" src="assets/proyecto_2.jpeg"/><div class="overlay"><h3>Curvas de nivel</h3><p>Producto topográfico listo para análisis y diseño.</p></div></article><article class="project-card"><img alt="Captura aérea del terreno" src="assets/proyecto_3.jpeg"/><div class="overlay"><h3>Captura del terreno</h3><p>Información aérea utilizada como base del procesamiento.</p></div></article></div>
+<article class="project-card small"><img alt="Mismo terreno sin vegetación" src="proyecto_sin_vegetacion.png"/><div class="overlay"><h3>Mismo terreno sin vegetación</h3><p>Modelo del terreno generado con LiDAR para visualizar la superficie debajo de la vegetación.</p></div></article>
+<article class="project-card small"><img alt="Modelo de elevación y curvas de nivel" src="proyecto_1.jpeg"/><div class="overlay"><h3>Modelo de elevación + curvas de nivel</h3><p>Visualización del relieve y variación de elevación del terreno.</p></div></article>
+</div>
+</div>
+<div class="project-grid project-grid-extra">
+<article class="project-card"><img alt="Terreno con vegetación - captura aérea" src="proyecto_vegetacion.png"/><div class="overlay"><h3>Terreno con vegetación</h3><p>Captura aérea de alta resolución con cobertura vegetal.</p></div></article>
+<article class="project-card"><img alt="Mismo terreno sin vegetación mediante LiDAR" src="proyecto_sin_vegetacion.png"/><div class="overlay"><h3>Mismo terreno sin vegetación</h3><p>Modelo digital del terreno generado con LiDAR para analizar la superficie debajo de la vegetación.</p></div></article>
+</div>
 <p class="project-note">Las imágenes de esta sección corresponden a material proporcionado para AeroglobalMX.</p>
-<div style="margin-top:60px"><div class="kicker" style="color:#727a83;margin-bottom:18px">Video · Proyectos</div><div class="project-grid"><article class="project-card"><video controls muted playsinline poster="assets/video_1_poster.jpg" preload="metadata"><source src="assets/video_1.mp4" type="video/mp4"/></video></article><div class="project-stack"><article class="project-card small"><video controls muted playsinline poster="assets/video_3_poster.jpg" preload="metadata"><source src="assets/video_3.mp4" type="video/mp4"/></video></article></div></div></div>
+<div style="margin-top:60px"><div class="kicker" style="color:#727a83;margin-bottom:18px">Video · Proyectos</div>
+<div class="project-grid">
+<article class="project-card"><video controls="True" muted="True" playsinline="True" poster="video_1_poster.jpg" preload="metadata"><source src="video_1.mp4" type="video/mp4"/></video></article>
+<div class="project-stack">
+<article class="project-card small"><video controls="True" muted="True" playsinline="True" poster="video_3_poster.jpg" preload="metadata"><source src="video_3.mp4" type="video/mp4"/></video></article>
+</div>
+</div>
+</div>
 </div></section>
 <section class="light" id="servicios"><div class="container">
 <div class="section-head"><div><div class="kicker">Servicios</div><h2>Una plataforma aérea para cada necesidad.</h2></div><p>Integramos captura aérea, sensores especializados y procesamiento geoespacial para entregar información que realmente sirve en obra, ingeniería y desarrollo.</p></div>
@@ -242,7 +254,7 @@ body{overflow-x:hidden}
 <section class="deliverables" id="entregables"><div class="container">
 <div class="section-head"><div><div class="kicker">Entregables</div><h2>La información, lista para tu proyecto.</h2></div><p>Seleccionamos los productos de acuerdo con el objetivo del levantamiento y el flujo de trabajo del cliente.</p></div>
 <div class="deliver-grid">
-<div class="deliver"><b>DEM</b><p>Modelo digital de elevación.</p></div><div class="deliver"><b>DSM</b><p>Modelo digital de superficie.</p></div><div class="deliver"><b>Nube de puntos</b><p>Información tridimensional del levantamiento.</p></div><div class="deliver"><b>Curvas de nivel</b><p>Representación topográfica del terreno.</p></div><div class="deliver"><b>Ortomosaico</b><p>Imagen aérea georreferenciada.</p></div><div class="deliver"><b>Modelo 3D</b><p>Representación tridimensional del área.</p></div><div class="deliver"><b>LAS / LAZ</b><p>Formatos para nubes de puntos.<span class="formats">Formatos disponibles: LAS 1.2 · LAS 1.4 · LAZ 1.2 · LAZ 1.4 · PLY · PCD · PNTS · S3MB</span></p></div><div class="deliver"><b>GeoTIFF</b><p>Información raster georreferenciada.</p></div>
+<div class="deliver"><b>DEM</b><p>Modelo digital de elevación.</p></div><div class="deliver"><b>DSM</b><p>Modelo digital de superficie.</p></div><div class="deliver"><b>Nube de puntos</b><p>Información tridimensional del levantamiento.</p></div><div class="deliver"><b>Curvas de nivel</b><p>Representación topográfica del terreno.</p></div><div class="deliver"><b>Ortomosaico</b><p>Imagen aérea georreferenciada.</p></div><div class="deliver"><b>Modelo 3D</b><p>Representación tridimensional del área.</p></div><div class="deliver"><b>LAS / LAZ</b><p>Formatos para nubes de puntos.</p><span class="formats">Formatos disponibles: LAS 1.2 · LAS 1.4 · LAZ 1.2 · LAZ 1.4 · PLY · PCD · PNTS · S3MB</span></div><div class="deliver"><b>GeoTIFF</b><p>Información raster georreferenciada.</p></div>
 </div>
 </div></section>
 <section class="marketing" id="marketing"><div class="container marketing-inner">
